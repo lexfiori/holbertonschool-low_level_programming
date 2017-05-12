@@ -20,8 +20,8 @@ int main(void)
 			putchar (k);
 			if (k != 57 || m != 57)
 			{
-				putchar (32);
 				putchar (44);
+				putchar (32);
 			}
 		}
 	}
