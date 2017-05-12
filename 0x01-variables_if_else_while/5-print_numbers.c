@@ -14,7 +14,8 @@ int main(void)
 
 	for (c = 0; c <= 9; c++)
 	{
-		printf("%i\n", c);
+		printf("%i", c);
 	}
+	putchar (10);
 	return (0);
 }
