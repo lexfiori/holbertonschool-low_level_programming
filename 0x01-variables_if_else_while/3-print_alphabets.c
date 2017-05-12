@@ -3,7 +3,9 @@
 /**
  * main - Entry point
  *
- * Return : Always 0 (Success)
+ * Description - this is a file
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -18,6 +20,6 @@ int main(void)
 	{
 		putchar (c);
 	}
-	putchar (10);
+	putchar ('\n');
 	return (0);
 }
