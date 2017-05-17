@@ -6,7 +6,7 @@
 (*
 * Description: prints last digit
 (* section header: Section description)*
-* Return: n
+* Return: j
 */
 
 int print_last_digit(int n)
