@@ -1,0 +1,35 @@
+#include"holberton.h"
+#include <stdio.h>
+
+/**
+ * jack_bauer - prints hours and minutes
+(*
+* Description: lowercase letters
+(* 
+* Return: 0 depending
+*/
+
+
+void jack_bauer(void)
+{
+	int hours;
+	int min;
+	int h;
+
+	
+	for (min = 0; min < 60; min++);
+	{
+		for (hours = 0; hours < 24; hours++);
+		{
+			h = hours/ 10;
+			_putchar(h);
+			_putchar((hours / 10) + '0');
+			_putchar((hours % 10) + '0');
+			_putchar(':');
+			_putchar((min / 10) + '0');
+			_putchar((min % 10) + '0');
+			_putchar('\n');
+			printf("%d, %d,", hours, min);
+		}
+	}
+}
