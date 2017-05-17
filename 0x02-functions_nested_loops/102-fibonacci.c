@@ -3,9 +3,9 @@
 /**
  * main - entry of main
  *
- * Description - this is a description of main
+ * Description: this is a description of main
  *
- * Return: 0 - this is the return
+ * Return: 0
  */
 
 int main(void)
