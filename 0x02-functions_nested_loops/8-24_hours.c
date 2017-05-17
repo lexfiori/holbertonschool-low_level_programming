@@ -3,11 +3,8 @@
 /**
  * jack_bauer - prints hours and minutes
  *
- *
- * 
  * Return: 0 depending
-*/
-
+ */
 
 void jack_bauer(void)
 {
@@ -21,7 +18,6 @@ void jack_bauer(void)
 
 		for (w = 0; w <= 59; w++)
 		{
-			
 			int n = w / 10;
 			int o = w % 10;
 
