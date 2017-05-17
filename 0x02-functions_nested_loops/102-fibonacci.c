@@ -6,7 +6,6 @@
  * Description - this is a description of main
  *
  * Return: 0 - this is the return
- *
  */
 
 int main(void)
