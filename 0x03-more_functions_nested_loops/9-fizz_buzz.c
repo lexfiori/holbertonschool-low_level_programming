@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry point print fizz buzz on specific multiples
+ *
+ * Description - prints fizz buzz, fizz or buzz on specific multiples
  *
  * Return: 0
  */
@@ -14,21 +16,25 @@ int main(void)
 	{
 		if (((n % 3) == 0) && ((n % 5) == 0))
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if ((n % 3) == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else if ((n % 5) == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", n);
+			printf("%d", n);
+		}
+		if (n != 100)
+		{
+			printf(" ");
 		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
