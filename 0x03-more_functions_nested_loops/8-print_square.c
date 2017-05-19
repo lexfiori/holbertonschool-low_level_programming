@@ -11,7 +11,7 @@
 
 void print_square(int size)
 {
-	int n = 10;
+	int n = size;
 	int j;
 
 	if (n > 0)
@@ -27,6 +27,6 @@ void print_square(int size)
 	}
 	else if (n <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	}
 }
