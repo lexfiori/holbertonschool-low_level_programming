@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - main entry for Fizzbuzz
- *
- * Description - prints Fizz for mult of 3, Buzz for mult of 5, Fizzbuzz
+ * main - Entry point
  *
  * Return: 0
  */
