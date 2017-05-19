@@ -1,0 +1,25 @@
+#include "holberton.h"
+
+/**
+ * print_diagonal - print diagonals
+ * @n: integer
+ *
+ * Description - this prints diagonals
+ *
+ * Return: 0
+ */
+
+void print_diagonal(int n)
+{
+	int j;
+	int l;
+
+	for (l = 0; l < j; l++)
+	{
+		for (j = 0; j < n; j++)
+		{
+		}
+		_putchar('_');
+	}
+	_putchar('\n');
+}
