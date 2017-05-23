@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - pointers, first code
+ * reset_to_98 - pointers, first code
+ * @*n: takes a pointer
  *
  * Return: Always 0
  */
