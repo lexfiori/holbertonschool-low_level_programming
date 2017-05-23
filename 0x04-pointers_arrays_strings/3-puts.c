@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -6,7 +5,7 @@
  *
  * @str: a string
  *
- * Return: 0
+ * Return: void
  */
 
 void _puts(char *str)
@@ -16,7 +15,7 @@ void _puts(char *str)
 
 	while (str[i])
 	{
-		putchar(str[i++]);
+		_putchar(str[i++]);
 	}
-	_putchar(10);
+	_putchar('\n');
 }
