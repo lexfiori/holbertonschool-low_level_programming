@@ -3,7 +3,7 @@
 /**
  * print_rev - print the reverse
  *
- * @s: print the integer
+ * @s: print the character
  *
  * Return - 0
  */
@@ -21,5 +21,5 @@ void print_rev(char *s)
 	{
 		putchar(s[k]);
 	}
-	putchar(10);
+	putchar('\n');
 }
