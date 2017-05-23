@@ -1,15 +1,22 @@
 #include <stdio.h>
 #include "holberton.h"
 
+/**
+ * _puts - puts a character
+ *
+ * @str: a string
+ *
+ * Return: 0
+ */
+
 void _puts(char *str)
 {
 
-	int temp;
-	temp = *str;
+	int i = 0;
 
-	while (*str)
+	while (str[i])
 	{
-	       	if(_putchar(temp++) == EOF) return;
+		putchar(str[i++]);
 	}
-	if (_putchar('\n') == EOF) return;
+	_putchar(10);
 }
