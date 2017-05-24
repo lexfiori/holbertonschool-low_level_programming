@@ -14,17 +14,20 @@ void rev_string(char *s)
 	int j;
 	int k;
 	char u;
+	int a = 10, b = 10;
 
 	while (s[i])
 	{
 		i++;
 	}
 
-	for (j = i; j <= (i / 2); j--)
+	for (j = i; j >= ((i - 1)/ 2); j--)
 	{
+		a = s[k];
+		b = s[j];
 		k = i - j;
-		u = s[k];
-		s[k] = s[j];
-		s[2] = u;
+		u = a;
+		a = b;
+		b = u;
 	}
 }
