@@ -9,15 +9,10 @@
 
 char *cap_string(char *s)
 {
-	int n, z, m, k;
+	int z, m, k;
 	char chars[13] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, ')', '{', '}'};
 
-	while (s[n])
-	{
-		n++;
-	}
-
-	for (m = 0; m < n; m++)
+	for (m = 0; s[m] != '\0'; m++)
 	{
 		z = m + 1;
 
@@ -27,10 +22,6 @@ char *cap_string(char *s)
 			{
 				s[z] = s[z] - 32;
 			}
-			else if (s[m] == s[0])
-			{
-				s[m] = s[m] - 32;
-x			}
 		}
 	}
 	return (s);
