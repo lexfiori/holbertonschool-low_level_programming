@@ -13,7 +13,7 @@ char *rot13(char *s)
 	int n = 0;
 	int j = 0;
 
-	char rot131[] = "ABCDEFGHIJKLMabcdefghijkl";
+	char rot131[] = "ABCDEFGHIJKLMabcdefghijklm";
 	char rot132[] = "NOPQRSTUVWXYZnopqrstuvwxyz";
 
 	for (n = 0; s[n] != '\0'; n++)
