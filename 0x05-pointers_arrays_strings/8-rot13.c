@@ -18,7 +18,7 @@ char *rot13(char *s)
 
 	for (n = 0; s[n] != '\0'; n++)
 	{
-		for (j = 0; j <= 26; j++)
+		for (j = 0; j < 26; j++)
 		{
 			if (s[n] == rot131[j])
 			{
