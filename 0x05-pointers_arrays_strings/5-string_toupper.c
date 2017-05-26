@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - change the string to upper
- * @s - pointer made up of chars
+ * @s: pointer made up of chars
  *
  * Return: 0
  */
