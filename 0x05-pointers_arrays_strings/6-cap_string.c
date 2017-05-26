@@ -10,7 +10,7 @@
 char *cap_string(char *s)
 {
 	int z, m, k;
-	char chars[13] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, ')', '{', '}'};
+	char chars[] = {" \t\n,;.!?\"(){}"};
 
 	for (m = 0; s[m] != '\0'; m++)
 	{
