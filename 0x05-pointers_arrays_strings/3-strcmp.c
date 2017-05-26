@@ -2,8 +2,8 @@
 
 /**
  * _strcmp - compares two strings
- * @s1 - an array
- * @s2 - another array
+ * @s1: an array
+ * @s2: another array
  *
  * Return: 0
  */
@@ -16,7 +16,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[n] != s2[n])
 		{
-			return(s1[n] - s2[n]);
+			return (s1[n] - s2[n]);
 		}
 	}
 	return (0);
