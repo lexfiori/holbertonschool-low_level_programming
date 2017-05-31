@@ -5,6 +5,8 @@
  *
  * @s: pointer to a string
  * @c: pointer to a char
+ *
+ * Return: s
  */
 
 char *_strchr(char *s, char c)
@@ -14,5 +16,5 @@ char *_strchr(char *s, char c)
 		{
 			return (0);
 		}
-	return (char *)s;
+	return (s);
 }
