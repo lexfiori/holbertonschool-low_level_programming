@@ -10,22 +10,31 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int n, k;
-	int bytes = 1;
+	int bytes = 0;
 
-	for (n = 0; s[n] != '\0'; n++)
+	while(*s && *_strchr(accept, *s++))
 	{
-		for (k = 0; accept[k] != '\0'; k++)
-		{
-			if (s[n] != accept[k])
-			{
-				k++;
-			}
-			else if (s[n] == accept[k])
-			{
-				bytes++;
-			}
-		}
+		bytes++;
 	}
 	return (bytes);
 }
+
+/**
+ * *_strchr - the same
+ * @s: is a pointer to a string
+ * @c: a character
+ *
+ * Return: 0
+ */
+
+
+char *_strchr(char *s, char c)
+{
+while (*s != (char)c)
+                if (!*s++)
+                {
+                        return (0);
+                }
+        return (s);
+}
+
