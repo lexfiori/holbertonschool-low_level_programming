@@ -1,0 +1,27 @@
+#include "holberton.h"
+
+/**
+ * _strncat - concatenates two strings
+ *
+ * @src: a string
+ * @dest: a string
+ * @n: the limit
+ * Return: 0
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	int len, i, j;
+
+	while (dest[len] != '\0')
+	{
+		len++;
+	}
+
+	for (i = len, j = 0; src[j] != 0 && n != 0; n--, i++, j++)
+	{
+		dest[i] = src[j];
+	}
+
+	return (dest);
+}

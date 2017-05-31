@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include "holberton.h"
+
+void _puts(char *str)
+{
+
+	int temp;
+	while (*str)
+	{
+	       	if(_putchar(temp++) == EOF) return;
+	}
+	temp = *str;
+	if (_putchar('\n') == EOF) return;
+}

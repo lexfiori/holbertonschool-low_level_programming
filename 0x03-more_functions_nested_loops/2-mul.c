@@ -1,0 +1,20 @@
+#include "holberton.h"
+
+/**
+ * mul - multiples two integers
+ * @a: an integer
+ * @b: an integer
+ *
+ * Description - multiplication
+ * Return: j
+ *
+ */
+
+int mul(int a, int b)
+{
+	int j;
+
+	j = a * b;
+
+	return (j);
+}
