@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * _sqrt_recursion - recurse the program to get the square root
+ * @n: takes an integer
+ *
+ * Return: 0
+ */
+
 int _sqrt_recursion(int n)
 {
 	if (n == 1)
@@ -23,7 +30,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt_recursion - square root recursion of an int n
+ * _checker - square root recursion of an int n
  * @n: integer n
  *
  * Return: 0
@@ -31,7 +38,7 @@ int _sqrt_recursion(int n)
 
 int _checker(int n)
 {
-	if(_sqrt_recursion(n) % 10)
+	if (_sqrt_recursion(n) % 10)
 	{
 		return (1);
 	}
