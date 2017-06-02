@@ -8,5 +8,6 @@ int _sqrt_recursion(int n);
 int _checker(int n);
 int is_prime_number(int n);
 int is_palindrome(char *s);
-int wring_it_in(char *s, n, k);
+int wring_it_in(char *s, int n, int k);
 int length(char *s);
+int check(int x, int n);
