@@ -20,12 +20,12 @@ int check(int x, int n)
 	}
 	else
 	{
-		return check(x + 1, n);
+		return (check(x + 1, n));
 	}
 }
 
 /**
- * is_prime_number - checks if the number is a prime
+ * _sqrt_recursion - checks if the number is a prime
  * @n: takes an integer
  *
  * Return: n
