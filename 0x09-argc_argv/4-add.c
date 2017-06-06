@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		}
 		printf("%i\n", sum);
 	}
-	else
+	else if (argc <= 1)
 	{
 		printf("0\n");
 	}
