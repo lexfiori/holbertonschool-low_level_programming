@@ -1,42 +1,44 @@
 #include "holberton.h"
 
 /**
- * length  - function that returns true if palindrome
- * @s: a string of characters
+ * length - function that returns true if palindrome
+ * @string: a string of characters
  *
  * Return: 0
  */
 
-int length(char *s)
+int length(char *string)
 {
-	int count = 0;
 
-	if (*s)
+	if (*string != '\0')
 	{
-		count++;
-		length(++s);
+		return (1 + (length(string + 1)));
 	}
-	return (count);
+
+	else
+	{
+		return (0);
+	}
 }
 
 /**
  * wring_it_in - wrings it in
- * @s: a pointer to a string of characters
- * @n: an integer
+ * @str: a pointer to a string of characters
+ * @y: an integer
  * @k: an integer
  *
  * Return: 0
  */
 
-int wring_it_in(char *s, int n, int k)
+int wring_it_in(char *str, int y, int k)
 {
-	if (s[n - k] == s[n] && ((n - k) < 2))
-	{
-		wring_it_in(s, n--, k++);
-	}
-	if ((n - k) == 1 || (n - k) == 0)
+	if (y >= k)
 	{
 		return (1);
+	}
+	else if (str[k] == str[y])
+	{
+		return (wring_it_in(str, y + 1, k - 1));
 	}
 	return (0);
 }
@@ -50,15 +52,10 @@ int wring_it_in(char *s, int n, int k)
 
 int is_palindrome(char *s)
 {
-	int n = length(*s);
-	int k = n - 1;
+	int n;
 
-	if (*s != '\0')
-	{
-		if (wring_it_in(s, n, k))
-		{
-			return (1);
-		}
-	}
-	return (0);
+	n = length(s);
+
+	return (wring_it_in(s, 0, n - 1));
+
 }

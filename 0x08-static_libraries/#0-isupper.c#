@@ -1,0 +1,21 @@
+#include "holberton.h"
+2
+3/**
+    4* _isupper - returns 1 if upper
+    5* @c: an integer
+    6*
+    7* Description - returns 1 or 0 if upper
+    8* Return: 0 or 1 depending
+    9*/
+10
+11int _isupper(int c)
+12{
+	13if (c >= 65 && c <= 90)
+		14{
+		15return (1);
+		16}
+	17else
+		18{
+		19return (0);
+		20}
+	21}

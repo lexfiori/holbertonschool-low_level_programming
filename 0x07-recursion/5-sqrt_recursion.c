@@ -1,51 +1,41 @@
 #include "holberton.h"
 
 /**
- * _sqrt_recursion - recurse the program to get the square root
- * @n: takes an integer
+ * check - checks if n is square
+ * @n: the number whose square root we want
+ * @x: the tested square root
  *
  * Return: 0
+ */
+
+int check(int x, int n)
+{
+	if (x * x == n)
+	{
+		return (x);
+	}
+	if (x * x >= n)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (check(x + 1, n));
+	}
+}
+
+/**
+ * _sqrt_recursion - checks if the number is a prime
+ * @n: takes an integer
+ *
+ * Return: n
  */
 
 int _sqrt_recursion(int n)
 {
-	if (n == 1)
-	{
-		return (1);
-	}
+	int x;
 
-	else if (n < 1)
-	{
-		n  =  (n / (_sqrt_recursion(n)));
-		if (_checker(n) == 1)
-		{
-			return (_sqrt_recursion(n));
-		}
-		else if (_checker(n) == 0)
-		{
-			return (-1);
-		}
-	}
-	return (0);
-}
-
-/**
- * _checker - square root recursion of an int n
- * @n: integer n
- *
- * Return: 0
- */
-
-int _checker(int n)
-{
-	if (_sqrt_recursion(n) % 10)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
-
-	return (0);
+	x = 0;
+	n = check(x, n);
+	return (n);
 }
