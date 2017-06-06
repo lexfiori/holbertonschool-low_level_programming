@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 	int i, v = 0, sum = 0;
 
-	if (argc > 0)
+	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -29,6 +29,10 @@ int main(int argc, char **argv)
 			}
 		}
 		printf("%i\n", sum);
+	}
+	else
+	{
+		printf("0\n");
 	}
 	return (0);
 }
