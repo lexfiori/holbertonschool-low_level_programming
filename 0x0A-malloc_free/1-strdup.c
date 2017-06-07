@@ -11,7 +11,7 @@
 
 char *_strdup(char *str)
 {
-	int size, i;
+	int size, i = 0;
 	char *copy;
 
 	size = strlen(str);
@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	{
 		copy[i] = str[i];
 	}
-
+	copy[i] = '\0';
 	return (copy);
 	free(copy);
 }
