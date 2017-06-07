@@ -16,11 +16,11 @@ char *_strdup(char *str)
 
 	size = strlen(str);
 	copy = (char *)malloc(sizeof(char) * (size + 1));
-	if (str == NULL)
+	if (str == '\0')
 	{
 		return (NULL);
 	}
-	if (copy == NULL)
+	if (copy == '\0')
 	{
 		return (NULL);
 	}
@@ -30,5 +30,4 @@ char *_strdup(char *str)
 	}
 	copy[i] = '\0';
 	return (copy);
-	free(copy);
 }
