@@ -11,7 +11,7 @@
 
 char *_strdup(char *str)
 {
-	int size;
+	int size, i;
 	char *copy;
 
 	size = strlen(str);
@@ -21,14 +21,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (*str)
+	for (i = 0; i < size; i++)
 	{
-		*copy = *str;
-		str++;
-		copy++;
-		printf("this is str %c\n", *str);
+		copy[i] = str[i];
 	}
-	*copy = '\0';
+	copy[i] = '\0';
 
 	return (copy);
 	free(copy);
